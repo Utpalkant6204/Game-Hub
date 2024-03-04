@@ -5,12 +5,16 @@ import ColorModeSwitch from "./ColorModeSwitch";
 
 interface Props {
   onSelectGenre : (genre: null) =>void;
+  onSelectPlatforms :(platform: null) => void;
 }
 
-const NavBar = ({onSelectGenre} : Props) => {
+const NavBar = ({onSelectGenre, onSelectPlatforms} : Props) => {
   return (
     <HStack justifyContent={"space-between"} padding={"10px"}>
-      <Button variant={"link"} onClick={() => onSelectGenre(null)}>
+      <Button variant={"link"} onClick={() => {
+        onSelectGenre(null);
+        onSelectPlatforms(null);
+      }}>
         <Image src={logo} boxSize={"60px"} />
       </Button>
       <ColorModeSwitch />
