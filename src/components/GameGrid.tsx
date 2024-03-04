@@ -11,7 +11,7 @@ interface Props {
 }
 const GameGrid = ({selectedGenre} : Props) => {
   const { data, error, isloading } = useGames(selectedGenre);
-  const skeleton = [1, 2, 3, 4, 5, 6];
+  const skeleton = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <>
       {error && <Text>{'Loading Failed!, Please Refresh'}</Text>}
