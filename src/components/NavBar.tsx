@@ -8,7 +8,7 @@ interface Props {
   onSelectPlatforms :(platform: null) => void;
 }
 
-const NavBar = ({onSelectGenre, onSelectPlatforms} : Props) => {
+const NavBar = ({onSelectGenre, onSelectPlatforms,} : Props) => {
   return (
     <HStack justifyContent={"space-between"} padding={"10px"}>
       <Button variant={"link"} onClick={() => {
