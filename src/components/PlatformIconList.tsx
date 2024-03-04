@@ -37,6 +37,7 @@ const PlatformIconList = ({ platforms }: Props) => {
           key={platform.id}
           as={iconMap[platform.name]}
           color={"gray.500"}
+          _hover={{ cursor: "pointer", color: "white" }}
         />
       ))}
     </HStack>
